@@ -1,0 +1,27 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using DanKeTools.Event;
+using UnityEngine.Events;
+using DanKeTools;
+
+namespace JoystickSE
+{
+
+    ///<summary>
+    ///脚本名称： JoystickSE.cs
+    ///修改时间：2022/12/27
+    ///脚本功能：JoystickSE接口
+    ///备注：
+    ///</summary>
+
+    public class JoystickManager : Singleton<JoystickManager>
+    {
+        public void AddListener<Vector2>(UnityAction<Vector2> action)
+        {
+            EventCenter.Instance().AddEventListener<Vector2>("Joystick", action);
+        }
+        
+    }
+
+}
