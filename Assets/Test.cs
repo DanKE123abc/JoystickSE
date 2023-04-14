@@ -15,7 +15,7 @@ public class Test : MonoBehaviour
     private Vector3 dir;
     void Start()
     {
-        JoystickManager.Instance().AddListener<Vector2>(CheckDirChange);
+        JoystickManager.instance.AddListener<Vector2>(CheckDirChange);
     }
 
     void Update()

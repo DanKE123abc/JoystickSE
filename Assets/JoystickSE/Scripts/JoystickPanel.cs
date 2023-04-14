@@ -40,9 +40,9 @@ namespace JoystickSE.Code
             TouchRect = GetControl<Image>("TouchRect");
             Control = GetControl<Image>("Controller");
 
-            UITriggerManager.Instance().AddTriggersListener(TouchRect, UIEventTriggerType.PointerDown, PointerDown);
-            UITriggerManager.Instance().AddTriggersListener(TouchRect, UIEventTriggerType.PointerUp, PointerUp);
-            UITriggerManager.Instance().AddTriggersListener(TouchRect, UIEventTriggerType.Drag, Drag);
+            UITriggerManager.instance.AddTriggersListener(TouchRect, UIEventTriggerType.PointerDown, PointerDown);
+            UITriggerManager.instance.AddTriggersListener(TouchRect, UIEventTriggerType.PointerUp, PointerUp);
+            UITriggerManager.instance.AddTriggersListener(TouchRect, UIEventTriggerType.Drag, Drag);
 
             if (type != JoystickType.Normal)
             {
@@ -71,7 +71,7 @@ namespace JoystickSE.Code
         public void PointerUp(BaseEventData data)
         {
             Control.transform.localPosition = Vector3.zero;
-            EventCenter.Instance().EventTrigger<Vector2>("Joystick", Vector2.zero);
+            EventCenter.instance.EventTrigger<Vector2>("Joystick", Vector2.zero);
             
             if (type != JoystickType.Normal)
             {
@@ -100,7 +100,7 @@ namespace JoystickSE.Code
                 Control.transform.localPosition = localPos.normalized * 180;
             }
 
-            EventCenter.Instance().EventTrigger<Vector2>("Joystick", localPos.normalized);
+            EventCenter.instance.EventTrigger<Vector2>("Joystick", localPos.normalized);
 
         }
 

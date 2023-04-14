@@ -19,7 +19,7 @@ namespace JoystickSE
     {
         public void AddListener<Vector2>(UnityAction<Vector2> action)
         {
-            EventCenter.Instance().AddEventListener<Vector2>("Joystick", action);
+            EventCenter.instance.AddEventListener<Vector2>("Joystick", action);
         }
         
     }
