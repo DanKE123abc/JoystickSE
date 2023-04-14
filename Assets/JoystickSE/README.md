@@ -25,7 +25,7 @@ using JoystickSE
 ```
 
 ```c#
-JoystickManager.instance.AddListener<Vector2>(CheckDirChange);//传参函数
+JoystickEvent.instance.AddListener<Vector2>(CheckDirChange);//传参函数
 ```
 
 ##### 修改触控范围：

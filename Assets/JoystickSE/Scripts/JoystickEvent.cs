@@ -15,7 +15,7 @@ namespace JoystickSE
     ///备注：
     ///</summary>
 
-    public class JoystickManager : Singleton<JoystickManager>
+    public class JoystickEvent : Singleton<JoystickEvent>
     {
         public void AddListener<Vector2>(UnityAction<Vector2> action)
         {
