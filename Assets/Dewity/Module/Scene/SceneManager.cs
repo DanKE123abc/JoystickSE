@@ -1,0 +1,58 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.SceneManagement;
+using Dewity;
+using EventCenter = Dewity.EventCenter;
+
+namespace Dewity
+{
+
+    ///<summary>
+    ///脚本名称： SceneManager.cs
+    ///修改时间：
+    ///脚本功能：
+    ///备注：
+    ///</summary>
+
+    public class SceneManager : Singleton<SceneManager>
+    {
+        /// <summary>
+        /// 加载场景
+        /// </summary>
+        /// <param name="name">场景名称</param>
+        /// <param name="func">回调函数</param>
+        public void LoadScene(string name, UnityAction func = null)
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene(name);
+            func();
+        }
+
+        /// <summary>
+        /// 异步加载场景
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="func"></param>
+        public void LoadSceneAsyn(string name, UnityAction func = null)
+        {
+            MonoManager.instance.StartCoroutine(ReallyLoadSceneAsyn(name, func));
+
+        }
+
+        private IEnumerator ReallyLoadSceneAsyn(string name, UnityAction func)
+        {
+            AsyncOperation asyncOperation = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(name);
+            while (!asyncOperation.isDone)
+            {
+                EventCenter.instance.EventTrigger("SceneLoading", asyncOperation.progress);
+                yield return asyncOperation.progress;
+            }
+            func();
+        }
+
+
+
+    }
+
+}

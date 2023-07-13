@@ -41,8 +41,16 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\DanKeTools\Editor\FileCapacity.cs" />
-     <Compile Include="Assets\DanKeTools\Editor\FindRepeatAssets.cs" />
+     <Compile Include="Assets\Dewity\Editor\PackagesManager\Requests.cs" />
+     <Compile Include="Assets\Dewity\Editor\DewityManager\FileCapacity.cs" />
+     <Compile Include="Assets\Dewity\Editor\FindRepeatAssets\FindRepeatAssets.cs" />
+     <Compile Include="Assets\Dewity\Editor\ChatGPT\ChatApi.cs" />
+     <Compile Include="Assets\Dewity\Editor\DewityManager\ManagerGUI.cs" />
+     <Compile Include="Assets\Dewity\Editor\PackagesManager\PackagesManager.cs" />
+     <Compile Include="Assets\Dewity\ThirdParty\ToDo mini\Editor\ToDoMini.cs" />
+     <Compile Include="Assets\Dewity\Editor\ChatGPT\ChatWindow.cs" />
+     <Compile Include="Assets\Dewity\Editor\FindRepeatAssets\FindRepeatAssetsOutput.cs" />
+     <Compile Include="Assets\Dewity\ThirdParty\ToDo mini\Editor\ToDoMiniData.cs" />
      <Reference Include="UnityEngine">
      <HintPath>D:\2021.3.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
@@ -300,6 +308,9 @@
      </Reference>
      <Reference Include="UnityEditor.WindowsStandalone.Extensions">
      <HintPath>D:\2021.3.0f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEditor.UWP.Extensions">
+     <HintPath>D:\2021.3.0f1\Editor\Data\PlaybackEngines\MetroSupport\UnityEditor.UWP.Extensions.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Plastic.Newtonsoft.Json">
      <HintPath>D:\JoystickSE\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>

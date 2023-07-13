@@ -41,36 +41,37 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\JoystickSE\Scripts\JoystickManager.cs" />
-     <Compile Include="Assets\DanKeTools\Base\Singleton.cs" />
+     <Compile Include="Assets\Dewity\Core\ObjectPool\ObjectPoolData.cs" />
+     <Compile Include="Assets\JoystickSE\Scripts\JoystickEvent.cs" />
+     <Compile Include="Assets\Dewity\Core\Mono\MonoManager.cs" />
+     <Compile Include="Assets\Dewity\Core\Singleton\Singleton.cs" />
      <Compile Include="Assets\Test.cs" />
-     <Compile Include="Assets\DanKeTools\Event\EventCenter.cs" />
+     <Compile Include="Assets\Dewity\Core\ObjectPool\ObjectPool.cs" />
+     <Compile Include="Assets\Dewity\Module\Scene\SceneManager.cs" />
+     <Compile Include="Assets\Dewity\Core\Mono\MonoController.cs" />
+     <Compile Include="Assets\Dewity\Core\Event\EventCenter.cs" />
      <Compile Include="Assets\JoystickSE\Scripts\JoystickPanel.cs" />
-     <Compile Include="Assets\DanKeTools\UI\UIBasePanel.cs" />
-     <Compile Include="Assets\DanKeTools\UI\UITriggerManager.cs" />
-     <Compile Include="Assets\DanKeTools\Base\MonoSingleton.cs" />
-     <Compile Include="Assets\DanKeTools\Fsm\Fsm.cs" />
-     <Compile Include="Assets\DanKeTools\Scene\SceneManager.cs" />
-     <Compile Include="Assets\DanKeTools\Thread\ThreadManager.cs" />
-     <Compile Include="Assets\DanKeTools\Net\OnlineMT.cs" />
-     <Compile Include="Assets\DanKeTools\Utils\Components\AutoDestroyObject.cs" />
-     <Compile Include="Assets\DanKeTools\Pool\PoolData.cs" />
-     <Compile Include="Assets\DanKeTools\Net\Requests.cs" />
-     <Compile Include="Assets\DanKeTools\Voice\VoiceManager.cs" />
-     <Compile Include="Assets\DanKeTools\Utils\Console.cs" />
-     <Compile Include="Assets\DanKeTools\Base\DEncoding.cs" />
-     <Compile Include="Assets\DanKeTools\Mono\MonoController.cs" />
-     <Compile Include="Assets\DanKeTools\Utils\MD5.cs" />
-     <Compile Include="Assets\DanKeTools\Utils\StringEncryption.cs" />
-     <Compile Include="Assets\DanKeTools\Fsm\FsmState.cs" />
-     <Compile Include="Assets\DanKeTools\Utils\ToJson.cs" />
-     <Compile Include="Assets\DanKeTools\Utils\GPS.cs" />
-     <Compile Include="Assets\DanKeTools\IO\FileManager.cs" />
-     <Compile Include="Assets\DanKeTools\Utils\Components\DontDestroyObject.cs" />
-     <Compile Include="Assets\DanKeTools\IO\InputManager.cs" />
-     <Compile Include="Assets\DanKeTools\Pool\PoolManager.cs" />
-     <Compile Include="Assets\DanKeTools\Mono\MonoManager.cs" />
-     <Compile Include="Assets\DanKeTools\Thread\ThreadDelegate.cs" />
+     <Compile Include="Assets\Dewity\Core\UI\UIBasePanel.cs" />
+     <Compile Include="Assets\Dewity\Core\UI\UITriggerManager.cs" />
+     <Compile Include="Assets\Dewity\Core\Singleton\MonoSingleton.cs" />
+     <Compile Include="Assets\Dewity\ThirdParty\LitJson\Netstandard15Polyfill.cs" />
+     <Compile Include="Assets\Dewity\ThirdParty\LitJson\JsonException.cs" />
+     <Compile Include="Assets\Dewity\Core\StringEncryption\Des.cs" />
+     <Compile Include="Assets\Dewity\ThirdParty\LitJson\JsonData.cs" />
+     <Compile Include="Assets\Dewity\ThirdParty\LitJson\IJsonWrapper.cs" />
+     <Compile Include="Assets\Dewity\ThirdParty\LitJson\Lexer.cs" />
+     <Compile Include="Assets\Dewity\ThirdParty\LitJson\UnityTypeBindings.cs" />
+     <Compile Include="Assets\Dewity\Core\StringEncryption\Rsa.cs" />
+     <Compile Include="Assets\Dewity\ThirdParty\LitJson\JsonReader.cs" />
+     <Compile Include="Assets\Dewity\ThirdParty\LitJson\Extensions.cs" />
+     <Compile Include="Assets\Dewity\Core\Event\EventInfo.cs" />
+     <Compile Include="Assets\Dewity\Core\Dewity\DewityConfig.cs" />
+     <Compile Include="Assets\Dewity\ThirdParty\LitJson\JsonMockWrapper.cs" />
+     <Compile Include="Assets\Dewity\ThirdParty\LitJson\JsonWriter.cs" />
+     <Compile Include="Assets\Dewity\ThirdParty\LitJson\ParserToken.cs" />
+     <Compile Include="Assets\Dewity\Core\Dewity\Dewity.cs" />
+     <Compile Include="Assets\Dewity\ThirdParty\LitJson\JsonMapper.cs" />
+     <Compile Include="Assets\Dewity\Core\GameConsole\GameConsole.cs" />
      <Reference Include="UnityEngine">
      <HintPath>D:\2021.3.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>

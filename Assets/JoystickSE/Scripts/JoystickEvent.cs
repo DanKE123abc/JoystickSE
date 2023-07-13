@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using DanKeTools.Event;
 using UnityEngine.Events;
-using DanKeTools;
+using Dewity;
 
 namespace JoystickSE
 {
